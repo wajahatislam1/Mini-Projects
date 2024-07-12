@@ -4,11 +4,17 @@ import ProjectCard from "@/app/ui/projectCard/ProjectCard";
 export const MiniProjectsPage = () => {
   const projects = [
     {
-      link: "profile",
+      link: "/miniprojects/profile",
       image: "/project/profile-card.png",
       title: "Profile Card",
       description:
         "A simple card component that has a Person's info and links to his social media profiles.",
+    },
+    {
+      link: "/miniprojects/emailsubscribe",
+      image: "/project/email-subscribe.png",
+      title: "Newsletter Subscription",
+      description: "A component designed for newsletter subscriptions.",
     },
   ];
 
@@ -18,7 +24,7 @@ export const MiniProjectsPage = () => {
       <p>Here's a list of mini projects</p>
       <div className="flex flex-col flex-wrap md:flex-row max-w-screen-lg p-2">
         {projects.map((project, index) => (
-          <Link className="h-82" href={`/miniprojects/${project.link}`} key={index}>
+          <Link className="h-82" href={`${project.link}`} key={index}>
             <ProjectCard
               image={project.image}
               title={project.title}
