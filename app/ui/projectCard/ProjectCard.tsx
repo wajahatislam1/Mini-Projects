@@ -11,7 +11,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="flex flex-col items-center p-2 m-2 w-80 h-80 rounded-lg overflow-hidden bg-gradient-to-br from-pink-500 to-orange-400 hover:scale-105 hover:bg-gradient-to-tl duration-500">
-      <div className="w-full h-[22vh] mb-6">
+      <div className="w-full h-[22vh] mb-2">
         <img
           className="w-full h-full object-cover rounded-md"
           src={image}

@@ -16,13 +16,31 @@ export const MiniProjectsPage = () => {
       title: "Newsletter Subscription",
       description: "A component designed for newsletter subscriptions.",
     },
+    {
+      link: "/miniprojects/pricingcards",
+      image: "/project/pricing-cards.png",
+      title: "Pricing Cards",
+      description: "A page that contains different pricing plans, each with different package.",
+    },
+    {
+      link: "/miniprojects/productmodal",
+      image: "/project/product-modal.png",
+      title: "Product Modal",
+      description: "A modal that displays product details.",
+    },
+    {
+        link: "/miniprojects/imagegallery",
+        image: "/project/image-gallery.png",
+        title: "Image Gallery",
+        description: "A responsive component that displays Images and has a menu.",
+      },
   ];
 
   return (
-    <div className="flex flex-col gap-2 items-center justify-center">
-      <h2 className="bold text-xl">Mini Projects Page</h2>
+    <div className="flex flex-col items-center justify-center gap-2">
+      <h2 className="text-xl bold">Mini Projects Page</h2>
       <p>Here's a list of mini projects</p>
-      <div className="flex flex-col flex-wrap md:flex-row max-w-screen-lg p-2">
+      <div className="flex flex-col flex-wrap max-w-screen-lg p-2 md:flex-row">
         {projects.map((project, index) => (
           <Link className="h-82" href={`${project.link}`} key={index}>
             <ProjectCard
